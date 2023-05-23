@@ -9,13 +9,28 @@
 </head>
 <body>
     <div class="container">
-  Enter Num1:<input type="text" class="input" placeholder="num1"/><br/><br/><br/>
-  Enter Num2: <input type="text" class="input" placeholder="num2"/><br/><br/><br/>
- <h2 >Sum :</h2><br/><br/>
-  <button class='cal'>Calculate</button>
+  Enter Num1:<input type="text" class="input" placeholder="num1" id='val1'/><br/><br/><br/>
+  Enter Num2: <input type="text" class="input" placeholder="num2" id="val2"/><br/><br/><br/>
+ <h2 id="sum">Sum :</h2>
+  <button class='cal' onclick="calsum()">Calculate</button>
+  <button class='reset' onclick="reset()">reset</button>
+
     </div>
     <script>
+function calsum(){
+    const a = document.getElementById("val1").value;
+    const b = document.getElementById("val2").value;
+    const sum1=parseInt(a)+parseInt(b);
+    // alert(sum1)
+    document.getElementById('sum').innerHTML='Sum1:'+sum1;
+}
+function reset()
+{
+    document.getElementById('sum').innerHTML='Sum1: ';
+    const a = document.getElementById("val1").value = "";
+    const b = document.getElementById("val2").value = "";
 
+}
     </script>
 </body>
 </html>
