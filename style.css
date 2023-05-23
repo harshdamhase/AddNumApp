@@ -1,5 +1,5 @@
 .container{
-    background-color: rgb(126, 181, 237);
+    background-color: rgb(165, 229, 140);
     border: 3px solid black;
     width: 280px;
     padding: 20px;
@@ -11,7 +11,7 @@
 }
 .cal{
    border-radius: 5px;
-   background-color: chartreuse;
+   background-color: rgb(243, 243, 57);
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -34,7 +34,7 @@
 .reset{
     margin-top: 10px;
 border-radius: 5px;
-   background-color: rgb(227, 101, 101);
+   background-color: rgb(243, 26, 26);
     margin-left: auto;
     margin-right: auto;
     display: block;
